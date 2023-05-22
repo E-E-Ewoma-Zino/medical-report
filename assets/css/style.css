@@ -1,0 +1,50 @@
+body {
+    position: relative;
+}
+
+body,
+.mui-table>thead>tr>th, .border, input, select, textarea {
+    color: var(--bs-primary);
+    border-color: var(--bs-primary) !important;
+}
+
+td {
+    border: 1px solid var(--bs-primary);
+}
+
+legend, .strong {
+    font-weight: bold;
+}
+section{
+    margin-bottom: 4em;
+}
+legend,
+input,
+textarea,
+label,
+select,
+option {
+    color: var(--bs-primary) !important;
+}
+
+.mui-table>thead>tr>th {
+    border: 1px solid;
+}
+
+.stamp{
+    position: absolute;
+    bottom: 5em;
+    right: 5em;
+}
+
+.printArea {
+    position: fixed;
+    bottom: -6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.printArea svg {
+    fill: var(--bs-primary);
+    width: 8%;
+}

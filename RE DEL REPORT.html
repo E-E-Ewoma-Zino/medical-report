@@ -1,0 +1,2127 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Title -->
+    <title>Medical Report</title>
+    <!-- load custom font -->
+    <link href="./assets/css/google.font.css" rel="stylesheet" type="text/css" />
+    <!-- bootstraps css -->
+    <link rel="stylesheet" href="./assets/css/bootstraps.css" />
+    <!-- load MUI -->
+    <link href="./assets/css/mui.css" rel="stylesheet" type="text/css" />
+    <script src="./assets/js/mui.js"></script>
+    <!-- custom font css -->
+    <style>
+        body {
+            font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+        }
+    </style>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/print.css" media="print">
+</head>
+
+<body>
+    <div class="mui-appbar bg-white">
+        <div class="mui-container-fluid m-0 p-0 d-flex justify-content-between align-items-center">
+            <div class="mui--text-center w-100 pt-3">
+                <div>
+                    <img src="./assets/img/logo.jpg" class="logo img-fluid" width="20%" alt="logo">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p class="text-primary">Tel:
+                            <span>07062470060</span>,
+                            <span>07055231891</span>
+                        </p>
+                        <p class="text-primary ms-1">Email: <span>radel@gmail.com</span></p>
+
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center flex-column text-primary">
+                    <p class="text-primary">(Diagonistic & Analytical)</p>
+                    <p class="text-primary">8:00AM - 6:00PM (MON - SAT) PUBLIC HOLIDAYS INCLUSIVE</p>
+                    <p class="text-primary">1 OKIEMUTE UVIESA STREET, OPP, OTOKUTU HOSPITAL, WARRI, DELTA STATE</p>
+                </div>
+                <div class="bg-primary p-1">
+                    <h2 class="mui-text-light m-0">LABORATORY REPORT FORM</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="mui-container">
+        <form class="mui-form d-flex justify-content-center align-items-center flex-column my-5">
+            <!-- Personal info -->
+            <section id="personal"
+                class="d-flex justify-content-center align-items-center border border-1 p-2 flex-column w-100">
+                <legend>Patient's Information</legend>
+                <div class="row p-row w-100">
+                    <div class="col-6 col-md-4 col-lg-3 p-col-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="text">
+                            <label>Name</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-col-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="number">
+                            <label>Age</label>
+                        </div>
+                    </div>
+                    <div class="mui-select col-6 col-md-4 col-lg-3 p-col-3">
+                        <select>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                        <label>Sex</label>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-col-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="date" id="dateNow">
+                            <label>Date</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-col-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="text">
+                            <label>Referring Clinic/Hospital</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-col-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="text">
+                            <label>Clinic Address</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-col-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="text">
+                            <label>Test Request</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-col-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="text">
+                            <label>Specimen</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- HEAMATOLOGY & BLOOD TRANSFUSION   -->
+            <section id="fullBloodCount"
+                class="printAble d-flex justify-content-center align-items-center flex-column w-100">
+                <div class="row w-100">
+                    <div class="col-12 col-md-6">
+                        <legend>FULL BLOOD COUNT</legend>
+                        <table class="mui-table p-table">
+                            <thead>
+                                <tr>
+                                    <th>Tick</th>
+                                    <th>Test</th>
+                                    <th>Result</th>
+                                    <th>Normal Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>HB COUNT (g/dl)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        MALE 13 - 18 <br class="p-d-none">
+                                        FEMALE 11 - 15
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>PCV (%)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        MALE 40 - 54 <br class="p-d-none">
+                                        FEMALE 36 - 46
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>WBC (mm3)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        4,000 - 11,000
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>ESH (mm/hr)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        MALE 0 - 9 <br class="p-d-none"> FEMALE 0 - 2
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>NEUTROPHIL (%)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        40 - 75
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>LYMPHOCYTE (%)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        21 - 40
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>EOSINOPHIL</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        2 - 10
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>MONOCYTE (%)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        1 - 6
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>BASOPHIL (%)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        0 - 1
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>MALARIA PARASITE</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <legend>HEAMATOLOGY & BLOOD TRANSFUSION</legend>
+
+                        <table class="mui-table p-table">
+                            <thead>
+                                <tr>
+                                    <th>Tick</th>
+                                    <th>Test</th>
+                                    <th>Result</th>
+                                    <th>Normal Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>RETICULOCYTE (%)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        0.5 - 2.5
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>MCH (Pg)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        27 - 32
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>MCV (FI)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        80 - 100
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>MCHC (g/dl)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        32 - 36
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>PLATETET (/mm3)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        150,000 - 400,000
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>CLOTTING TIME (mins)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        5 - 11
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>BLEEDING TIME (mins)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        2 - 5
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>PROTHROMBIN TIME</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        11 - 14
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>B.B.C (M/mm3)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        3.9 - 6.5
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CHEMICAL PATHOLOGY -->
+            <section id="chemicalPathology"
+                class="printAble d-flex justify-content-center align-items-center flex-column w-100">
+                <legend>CHEMICAL PATHOLOGY</legend>
+                <div class="row w-100">
+                    <div class="col-12 col-md-6">
+                        <table class="mui-table p-table">
+                            <thead>
+                                <tr>
+                                    <th>Tick</th>
+                                    <th>Test</th>
+                                    <th>Result</th>
+                                    <th>Normal Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>BLOOD SUGAR (mg/dl)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        F = 60 - 100 <br class="p-d-none">
+                                        R = 70 - 120
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>2 HPP BLOOD GLUCOSE</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        &lt; 150mg/dl
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>INORGANIC PHOSPHATE</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        2.5 - 4.5
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>URIC ACID (mg/dl) </td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        2.0 - 7.0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>TOTAL PROTEIN (mol/L)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        5.5 - 8.5
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>ALBUMIUM (mol/L)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        3.5 - 5.5
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>GLOBULIN (g/dl)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        2.0 - 3.0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>SGOT (AST)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        &lt; 45
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>SGTP (ALT)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        &lt; 45
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>ACID PHOSPHATE TOTAL</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        4 - 11 (u/L)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>ACID PHOS PRESTATIC</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        0.4 (u/L)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>ALKALINE PHOSPHATASE</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        60 - 170 (u/L)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>SERUM AMYLASE</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        80 - 180
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <table class="mui-table p-table">
+                            <thead>
+                                <tr>
+                                    <th>Tick</th>
+                                    <th>Test</th>
+                                    <th>Result</th>
+                                    <th>Normal Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>POTASSIUM (mmol/L)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        3.5 - 5.5
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>SODIUM (mml/L)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        135 - 145
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>CHLORIDE (mml/L)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        98 - 107
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>BIEARHUNATE (mml/L)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        21 - 29
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>UREA (mml/L)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        2.9 - 8.2
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>CREATININE (umoL/)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        60 - 100
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        SEUM CALCIUM (mg/dl)
+                                    </td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        8.2 - 11
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>TOTAL BILLRUBIN (mg/dl)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        0 - 1.0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>DIRECT BILIRUBIN (mg/dl)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        0 - 0.25
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>CHOLESTEROL (mmol/L)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        &lt; 2.0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>HDL CHOLESTEROL (mmol/L)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        &gt; 1.0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>LDL CHOLESTEROL (mmol/L)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        &lt; 3.0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>TRIGLYCERIDE (mmol/L)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        &lt; 1.0
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row mt-2 w-100">
+                    <div class="col-12 col-md-6">
+                        <table class="mui-table p-table">
+                            <thead>
+                                <tr>
+                                    <th>Tick</th>
+                                    <th>Test</th>
+                                    <th>Result</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>BLOOD GROUP</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>GENOTYPE</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>PREGNANCY TEST</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>H-PYLORI</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <table class="mui-table p-table">
+                            <thead>
+                                <tr>
+                                    <th>Tick</th>
+                                    <th>Test</th>
+                                    <th>Result</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>HIV 1&2</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>HBSAg</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>HCV</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>VDRL</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row w-100">
+                    <div class="col-12 d-flex justify-content-start align-items-center">
+                        <div class="mui-checkbox me-2">
+                            <input type="checkbox">
+                        </div>
+                        <span class="strong me-5">WIDAL AGGHITINATION TITERS</span>
+                        <span class="strong me-5">"O" ANTIGEN</span>
+                        <span class="strong me-5">"H" ANTIGEN</span>
+
+                    </div>
+                </div>
+                <div class="row mt-2 w-100">
+                    <div class="col-12">
+                        <table class="mui-table p-table">
+                            <tbody>
+
+                                <tr>
+                                    <td>SALMONELLA TYPHI</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>SALMONELLA PARATYPHI A</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>SALMONELLA PARATYPHI B</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>SALMONELLA PARATYPHI C</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- URINALYSIS -->
+            <section id="urinalysis"
+                class="printAble d-flex justify-content-center align-items-center flex-column w-100">
+                <div class="row mt-2 w-100">
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-center align-items-center">
+                                <div class="mui-checkbox me-2">
+                                    <input type="checkbox">
+                                </div>
+                                <legend>URINALYSIS</legend>
+                            </div>
+                            <div class="col-6">
+                                <table class="mui-table p-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>APPEARANCE/COLOR</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>PROTEIN</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>PH</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>SPECIFIC GRAVITY</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>GLUCOSE</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>KETONE</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-6">
+                                <table class="mui-table p-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>BILIRUBIN</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>UROBILINOGEN</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>LEUCOCYTE</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>NITRATE</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>BLOOD</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>ASCORBIC ACID</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-center align-items-center">
+                                <div class="mui-checkbox me-2">
+                                    <input type="checkbox">
+                                </div>
+                                <legend>STOOL ANALYSIS</legend>
+                            </div>
+                            <div class="col-6">
+                                <table class="mui-table p-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>APPEARANCE</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>CONSISTENCY</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>PROTOZOA</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>WBC</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>PARASITE</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>STARCH</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-6">
+                                <table class="mui-table p-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>OVA</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>CYST</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>LARVA</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERMINAL ANALYSIS -->
+            <section id="serminalAlalysis"
+                class="printAble d-flex justify-content-center align-items-center flex-column w-100">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                    <div class="mui-checkbox me-2">
+                        <input type="checkbox">
+                    </div>
+                    <legend>SERMINAL ANALYSIS</legend>
+                </div>
+                <div class="row p-row w-100">
+                    <div class="col-6 col-md-4 col-lg-3 p-col-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="time">
+                            <label>Collection Time</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-col-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="time">
+                            <label>Time Examined</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-col-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="time">
+                            <label>Liquidification Time</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-col-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="text">
+                            <label>Viscosity</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-col-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="text">
+                            <label>Volume</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-col-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="text">
+                            <label>Appearace</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-col-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="text">
+                            <label>PH</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-col-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="text">
+                            <label>Active</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-col-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="text">
+                            <label>Sluggish</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-col-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="text">
+                            <label>NOn Motile</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-col-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="text">
+                            <label>Liquidification</label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-col-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="text">
+                            <label>Sperm Count</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="text">
+                            <label>Comment</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--  MICROBIOLOGY  -->
+            <section id="microbiology"
+                class="printAble d-flex justify-content-center align-items-center flex-column w-100">
+                <legend>MICROBIOLOGY</legend>
+                <div class="row w-100">
+                    <div class="col-12">
+                        <table class="mui-table p-table">
+                            <thead>
+                                <tr>
+                                    <th>(A)</th>
+                                    <th class="border-0 border-top">SPECIMEN</th>
+                                    <th class="border-0 border-top"></th>
+                                    <th class="border-0 border-top"></th>
+                                    <th class="border-0 border-top"></th>
+                                    <th class="border-0 border-top"></th>
+                                    <th class="border-0 border-top border-start">(B) MICROBIOLOGY</th>
+                                    <th class="border-0 border-top border-end"></th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th>Tick</th>
+                                    <th>TEST</th>
+                                    <th>RESULT</th>
+                                    <th>Tick</th>
+                                    <th>TEST</th>
+                                    <th>RESULT</th>
+                                    <th>TEST</th>
+                                    <th>RESULT</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>URINE</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>HVS</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <!-- B PART -->
+                                    <td>EPITH CELL</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>URETHRAL SWAP</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>STOOL (%)</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <!-- B PART -->
+                                    <td>PUS CELL</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>EAR SWAP</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>BLOOD</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <!-- B PART -->
+                                    <td>RBC</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>THROAT</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>WOUND</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <!-- B PART -->
+                                    <td>CAST</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>SPUTUM</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>SEMEN</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <!-- B PART -->
+                                    <td>YEAST</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>EXUDATE</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="mui-checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td>ASPIRATE</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                    <!-- B PART -->
+                                    <td>SCHISTOSOMA</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <!-- B PART -->
+                                    <td>TRICHOMONAS</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <!-- B PART -->
+                                    <td>OTHERS</td>
+                                    <td>
+                                        <div class="mui-textfield mui-textfield--float-label">
+                                            <input type="text">
+                                            <label>Type here</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-around align-items-center">
+                            <div class="mui-checkbox">
+                                <label class="d-flex justify-content-start align-items-center">
+                                    <input type="checkbox">
+                                    SKIN SMP
+                                </label>
+                            </div>
+                            <div class="mui-checkbox">
+                                <label class="d-flex j      ustify-content-start align-items-center">
+                                    <input type="checkbox">
+                                    AFB: 1
+                                </label>
+                            </div>
+                            <div class="mui-checkbox">
+                                <label class="d-flex justify-content-start align-items-center">
+                                    <input type="checkbox">
+                                    CFS
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="mui-textfield mui-textfield--float-label">
+                                <input type="text">
+                                <label>1</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="mui-textfield mui-textfield--float-label">
+                                <input type="text">
+                                <label>2</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="mui-textfield mui-textfield--float-label">
+                                <input type="text">
+                                <label>3</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="mui-textfield mui-textfield--float-label">
+                                <input type="text">
+                                <label>DATE</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="mui-textfield mui-textfield--float-label">
+                                <input type="text">
+                                <label>DATE</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="mui-textfield mui-textfield--float-label">
+                                <input type="text">
+                                <label>DATE</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <legend>CULTURE AND SENSITIVITY REPORT</legend>
+                            </div>
+                            <div class="col-12">
+                                <div class="col-12">
+                                    <div class="mui-textfield">
+                                        <textarea></textarea>
+                                        <label>CULTURE REPORT (1)</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mui-textfield">
+                                        <textarea></textarea>
+                                        <label>GRAM REPORT (2)</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2 w-100">
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <legend>ANTIBIOTIC SENSITIVITY REPORT</legend>
+                            </div>
+                            <div class="col-12">
+                                <table class="mui-table p-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>GPRFLOXACIN</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>ROCEPHIN</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>ERTROMYCIN</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>OFLOXACIN</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>ZINNACEF</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>AMOXICILLIN</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <legend class="opacity-0">ANTIBIOTIC SENSITIVITY REPORT</legend>
+                            </div>
+                            <div class="col-12">
+                                <table class="mui-table p-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>AUGULMENTIN</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>GENTAMICYN</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>STREPTOMYCIN</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>PEFLOXACIN</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>CEFTRIIAXONE</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>PENICILLIN</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <legend>ISOLATE</legend>
+                            </div>
+                            <div class="col-12">
+                                <table class="mui-table p-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>TARIVID</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>SEPTRIN</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>CHLORAMPHENICOL</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>AMPLICOX</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>FURADANTINE</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>LEVOFLOXACIN</td>
+                                            <td>
+                                                <div class="mui-textfield mui-textfield--float-label">
+                                                    <input type="text">
+                                                    <label>Type here</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CFS MICROSCOPY -->
+            <section id="cfsMirocoscopy"
+                class="printAble d-flex justify-content-center align-items-center flex-column w-100">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                    <div class="mui-checkbox me-2">
+                        <input type="checkbox">
+                    </div>
+                    <legend>CFS MICROSCOPY</legend>
+                </div>
+                <div class="row w-100">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-6 col-md-4">
+                                <div class="mui-textfield mui-textfield--float-label">
+                                    <input type="text">
+                                    <label>CELL COUNT</label>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="mui-textfield mui-textfield--float-label">
+                                    <input type="text">
+                                    <label>PARASITE</label>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="mui-textfield mui-textfield--float-label">
+                                    <input type="text">
+                                    <label>GRAM STAIN</label>
+                                </div>
+                            </div>
+                            <div class="col-12 mui--text-center">
+                                <legend>MISCELLANEOUS TEST REPORT</legend>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="mui-textfield mui-textfield--float-label">
+                                    <input type="text">
+                                    <label>TEST</label>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="mui-textfield mui-textfield--float-label">
+                                    <input type="text">
+                                    <label>CELL COUNT</label>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="mui-textfield mui-textfield--float-label">
+                                    <input type="text">
+                                    <label>LAB SCIENTIST</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mui-textfield">
+                                    <textarea></textarea>
+                                    <label>RESULT/COMMENT</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="printArea mui--text-center">
+                <button type="submit" class="mui-btn mui-btn--primary mui-btn--raised" id="printBtn">Print</button>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                    </svg>
+                </a>
+            </section>
+        </form>
+    </main>
+
+    <div class="stamp border-top border-primary border-3">
+        <h6>MEDICAL LABORATORY SCIENTIST</h6>
+    </div>
+    <script src="./assets/js/moment.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script>
+        const dateNow = document.getElementById("dateNow");
+
+        dateNow.value = moment().format("YYYY-MM-DD");;
+    </script>
+</body>
+
+</html>
