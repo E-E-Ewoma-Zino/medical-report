@@ -25,3 +25,7 @@ Printing the result would require the user to select the scale for the current f
 When printing all section the best scale is between (59-63). Do well to adjust it to your liking
 ![Scaling the print](./assets/img/screenshots/scaling.png)
 Also make sure that "Background Graphics" is checked
+
+##### Original Document
+![original document front](./assets/img/examples/original-front.jpg)
+![original document back](./assets/img/examples/original-back.jpg)

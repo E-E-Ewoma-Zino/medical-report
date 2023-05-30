@@ -73,6 +73,7 @@ printBtn.addEventListener("click", (e) => {
 					td.append(span);
 				}
 
+				pp.querySelector("input").type === "checkbox"? pp.querySelector("input").checked = true: "do nothing";
 				pp.classList.remove("d-none");
 				pp.classList.add("d-flex");
 			}
@@ -95,10 +96,12 @@ printBtn.addEventListener("click", (e) => {
 				ta.append(strong);
 				ta.append(span);
 
+				pp.querySelector("input").type === "checkbox"? pp.querySelector("input").checked = true: "do nothing";
 				pp.classList.remove("d-none");
 				pp.classList.add("d-flex");
 			}
 		});
+
 	});
 
 	window.print();
