@@ -56,7 +56,6 @@ printBtn.addEventListener("click", (e) => {
 					td.innerHTML = value;
 				}
 
-				// const isTrue = inP.parentElement.parentElement.parentElement.parentElement.classList.contains("printAble") || inP.parentElement.parentElement.parentElement.parentElement.parentElement.classList.contains("printAble") || inP.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.classList.contains("printAble");
 				else {
 					const value = inP.value;
 					const label = inP.parentElement.lastElementChild.innerHTML;
@@ -101,7 +100,6 @@ printBtn.addEventListener("click", (e) => {
 				pp.classList.add("d-flex");
 			}
 		});
-
 	});
 
 	window.print();
