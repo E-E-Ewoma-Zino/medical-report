@@ -74,7 +74,7 @@
 			<!-- Personal info -->
 			<section id="personal"
 				class="d-flex justify-content-center align-items-center border border-1 p-2 flex-column w-100">
-				<legend>Patient's Information</legend>
+				<legend>PATIENT'S INFORMATION</legend>
 				<div class="row p-row w-100">
 					<div class="col-6 col-md-4 col-lg-3 py-1 p-col-6">
 						<div class="mui-textfield mui-textfield--float-label">
@@ -1573,7 +1573,7 @@
 						<label class="h5" for="MICROBIOLOGY" onclick="accpectedSection(this)">MICROBIOLOGY</label>
 					</div>
 					<div class="col-12">
-						<div class="row">
+						<div class="row microbiologyOnFinish">
 							<div class="col">
 								<div class="mui-checkbox">
 									<label>
@@ -1962,88 +1962,96 @@
 								<div class="row">
 									<div class="col-12 d-flex justify-content-around align-items-center">
 										<div class="mui-checkbox">
-											<label class="d-flex justify-content-start align-items-center">
-												<input type="checkbox">
+											<label for="skinSmp" class="d-flex justify-content-start align-items-center">
+												<input type="checkbox" id="skinSmp" onclick="showSection(3)">
 												SKIN SMP
 											</label>
 										</div>
 										<div class="mui-checkbox">
-											<label class="d-flex justify-content-start align-items-center">
-												<input type="checkbox">
+											<label for="afb1" class="d-flex justify-content-start align-items-center">
+												<input type="checkbox" id="afb1" onclick="showSection(3)">
 												AFB: 1
 											</label>
 										</div>
 										<div class="mui-checkbox">
-											<label class="d-flex justify-content-start align-items-center">
-												<input type="checkbox">
+											<label for="cfs" class="d-flex justify-content-start align-items-center">
+												<input id="cfs" type="checkbox" onclick="showSection(4)">
 												CFS
 											</label>
 										</div>
 									</div>
-									<div class="col-6 col-md-4">
+									<div class="col-12 showSection d-none">
 										<div class="mui-textfield mui-textfield--float-label">
 											<input type="text">
-											<label>1</label>
+											<label>COMMENT</label>
 										</div>
 									</div>
-									<div class="col-6 col-md-4">
-										<div class="mui-textfield mui-textfield--float-label">
-											<input type="text">
-											<label>2</label>
+									<div class="showSection row d-none">
+										<div class="col-6 col-md-4">
+											<div class="mui-textfield mui-textfield--float-label">
+												<input type="text">
+												<label>1</label>
+											</div>
 										</div>
-									</div>
-									<div class="col-6 col-md-4">
-										<div class="mui-textfield mui-textfield--float-label">
-											<input type="text">
-											<label>3</label>
+										<div class="col-6 col-md-4">
+											<div class="mui-textfield mui-textfield--float-label">
+												<input type="text">
+												<label>2</label>
+											</div>
 										</div>
-									</div>
-									<div class="col-6 col-md-4">
-										<div class="mui-textfield mui-textfield--float-label">
-											<input type="date">
-											<label>DATE</label>
+										<div class="col-6 col-md-4">
+											<div class="mui-textfield mui-textfield--float-label">
+												<input type="text">
+												<label>3</label>
+											</div>
 										</div>
-									</div>
-									<div class="col-6 col-md-4">
-										<div class="mui-textfield mui-textfield--float-label">
-											<input type="date">
-											<label>DATE</label>
+										<div class="col-6 col-md-4">
+											<div class="mui-textfield mui-textfield--float-label">
+												<input type="date">
+												<label>DATE</label>
+											</div>
 										</div>
-									</div>
-									<div class="col-6 col-md-4">
-										<div class="mui-textfield mui-textfield--float-label">
-											<input type="date">
-											<label>DATE</label>
+										<div class="col-6 col-md-4">
+											<div class="mui-textfield mui-textfield--float-label">
+												<input type="date">
+												<label>DATE</label>
+											</div>
 										</div>
-									</div>
-									<div class="col-6 col-md-4">
-										<div class="mui-textfield mui-textfield--float-label">
-											<input type="text">
-											<label>APPEARANCE</label>
+										<div class="col-6 col-md-4">
+											<div class="mui-textfield mui-textfield--float-label">
+												<input type="date">
+												<label>DATE</label>
+											</div>
 										</div>
-									</div>
-									<div class="col-6 col-md-4">
-										<div class="mui-textfield mui-textfield--float-label">
-											<input type="text">
-											<label>TOTAL PROTEIN</label>
+										<div class="col-6 col-md-4">
+											<div class="mui-textfield mui-textfield--float-label">
+												<input type="text">
+												<label>APPEARANCE</label>
+											</div>
 										</div>
-									</div>
-									<div class="col-6 col-md-4">
-										<div class="mui-textfield mui-textfield--float-label">
-											<input type="text">
-											<label>CHLORIDE</label>
+										<div class="col-6 col-md-4">
+											<div class="mui-textfield mui-textfield--float-label">
+												<input type="text">
+												<label>TOTAL PROTEIN</label>
+											</div>
 										</div>
-									</div>
-									<div class="col-6 col-md-4">
-										<div class="mui-textfield mui-textfield--float-label">
-											<input type="text">
-											<label>GLUCOSE</label>
+										<div class="col-6 col-md-4">
+											<div class="mui-textfield mui-textfield--float-label">
+												<input type="text">
+												<label>CHLORIDE</label>
+											</div>
 										</div>
-									</div>
-									<div class="col-6 col-md-4">
-										<div class="mui-textfield mui-textfield--float-label">
-											<input type="text">
-											<label>GLOBULIN</label>
+										<div class="col-6 col-md-4">
+											<div class="mui-textfield mui-textfield--float-label">
+												<input type="text">
+												<label>GLUCOSE</label>
+											</div>
+										</div>
+										<div class="col-6 col-md-4">
+											<div class="mui-textfield mui-textfield--float-label">
+												<input type="text">
+												<label>GLOBULIN</label>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -2182,7 +2190,6 @@
 							</tbody>
 						</table>
 					</div>
-
 					<div class="col-4">
 						<table class="mui-table p-table">
 							<tbody>
@@ -2346,7 +2353,12 @@
 	</div>
 
 	<!-- Reg number box -->
-	<div class="regBox border border-2 border-primary justify-content-center align-items-center fontLarge fw-bolder"></div>
+	<div class="regBox border border-2 border-primary justify-content-center align-items-center">
+		<div class="mui-textfield mui-textfield--float-label">
+			<input type="text">
+			<!-- <label>Type here</label> -->
+		</div>
+	</div>
 
 	<script src="./assets/js/moment.js"></script>
 	<script src="./assets/js/index.js"></script>
@@ -2371,7 +2383,7 @@
 			document.querySelector(".regBox").innerHTML = "RA-" + Date.now();
 		}
 
-		randomReg();
+		// randomReg();
 	</script>
 </body>
 

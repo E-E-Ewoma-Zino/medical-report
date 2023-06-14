@@ -78,6 +78,11 @@ printBtn.addEventListener("click", (e) => {
 
 	doThis();
 
+	microbiologyOnFinish();
+
+	document.querySelector(".regBox").classList.add("d-flex");
+	document.querySelector(".regBox").classList.add("p-2");
+
 	e.currentTarget.addEventListener("click", () => window.print());
 });
 
@@ -115,6 +120,7 @@ function activate(pp, inP) {
 
 function formatInput(inP) {
 	const value = inP.value;
+	console.log("inP", inP);
 	const label = inP.parentElement.querySelector("label").innerHTML;
 	const strong = document.createElement("strong");
 	const span = document.createElement("strong");
@@ -153,5 +159,25 @@ function doThis() {
 		});
 		o.classList.add(newC.substring(2, newC.length));
 		o.classList.add("fontLarge");
+	});
+}
+
+function microbiologyOnFinish () {
+	const microbiology = document.querySelector(".microbiologyOnFinish");
+	const choosenOnes = [];
+
+	Array.from(microbiology.children).forEach(col => {
+		console.log("What is col", col);
+		[...col.children].forEach(muicheckBox => {
+			const checkbox = muicheckBox.firstElementChild.firstElementChild;
+			if(checkbox.checked) choosenOnes.push(muicheckBox);
+		});
+	});
+
+	microbiology.innerHTML = null;
+	choosenOnes.forEach(theOne => {
+		theOne.classList.add("col");
+		theOne.classList.add("mt-2");
+		microbiology.append(theOne);
 	});
 }
