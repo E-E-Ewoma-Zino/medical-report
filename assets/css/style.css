@@ -65,3 +65,7 @@ option {
 	fill: var(--bs-primary);
 	width: 8%;
 }
+
+.not-accepted {
+	filter: opacity(0.5);
+}

@@ -1,3 +1,8 @@
+### Contact me for help on using and build up this kind of application at eewoma75@gmail.com or 09074826551
+
+
+
+
 # Medical Report
 Printing of medical report made easy. This site gives you controll to print what ever section you filled and remove the section not filled
 

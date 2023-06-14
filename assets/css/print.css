@@ -118,7 +118,7 @@ option {
 
 .regBox {
 	position: absolute;
-	display: block;
+	display: flex!important;
     top: 2em;
     right: 1em;
     width: 15em;
@@ -131,4 +131,8 @@ option {
 
 .fontLarge {
 	font-size: 2em!important;
+}
+
+.not-accepted {
+	display: none!important;
 }

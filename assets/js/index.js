@@ -26,6 +26,9 @@ const printBtn = document.getElementById("printBtn");
 
 printBtn.addEventListener("click", (e) => {
 	e.preventDefault();
+	e.currentTarget.innerHTML = "Print";
+	e.currentTarget.classList.add("mui-btn--danger");
+	e.currentTarget.classList.remove("mui-btn--primary");
 
 	notShow();
 
@@ -44,6 +47,7 @@ printBtn.addEventListener("click", (e) => {
 			if (inP.value !== '') {
 				if (inP.parentElement.parentElement.tagName === "TD") {
 					try {
+						// Try to check the checkbox for this input field
 						inP.parentElement.parentElement.parentElement.firstElementChild.firstElementChild.firstElementChild.checked = true;
 					} catch (error) {
 						console.error("Could not find a checkbox!");
@@ -54,55 +58,27 @@ printBtn.addEventListener("click", (e) => {
 
 					inP.parentElement.remove();
 					td.innerHTML = value;
+				} else {
+					formatInput(inP);
 				}
-
-				else {
-					const value = inP.value;
-					const label = inP.parentElement.lastElementChild.innerHTML;
-					const strong = document.createElement("strong");
-					const span = document.createElement("span");
-					const td = inP.parentElement.parentElement;
-
-					td.classList.add("fontLarge");
-
-					inP.parentElement.remove();
-					strong.innerHTML = label.toUpperCase();
-					span.innerHTML = ": " + value;
-					td.append(strong);
-					td.append(span);
-				}
-
-				pp.querySelector("input").type === "checkbox"? pp.querySelector("input").checked = true: "do nothing";
-				pp.classList.remove("d-none");
-				pp.classList.add("d-flex");
+				activate(pp, inP);
 			}
 		});
 		pp.querySelectorAll("textarea").forEach(inP => {
 			if (inP.value !== '') {
-				const value = inP.value;
-				const label = inP.parentElement.lastElementChild.innerHTML;
-				const strong = document.createElement("strong");
-				const span = document.createElement("span");
-				const ta = inP.parentElement.parentElement;
-
-				ta.classList.add("fontLarge");
-				ta.classList.add("border-4");
-				ta.classList.add("border-bottom");
-
-				inP.parentElement.remove();
-				strong.innerHTML = label.toUpperCase();
-				span.innerHTML = ": " + value;
-				ta.append(strong);
-				ta.append(span);
-
-				pp.querySelector("input").type === "checkbox"? pp.querySelector("input").checked = true: "do nothing";
-				pp.classList.remove("d-none");
-				pp.classList.add("d-flex");
+				formatInput(inP);
+				activate(pp, inP);
 			}
 		});
 	});
 
-	window.print();
+	twin();
+
+	formatPersonalSection();
+
+	doThis();
+
+	e.currentTarget.addEventListener("click", () => window.print());
 });
 
 window.onafterprint = function () {
@@ -111,4 +87,71 @@ window.onafterprint = function () {
 
 	show();
 	location.reload();
+}
+
+function twin() {
+	// some condictions
+	// make it so that once any of these sections are selected, the twin section is also selected
+	if (printable[0].classList.contains("d-flex") || printable[1].classList.contains("d-flex")) {
+		printable[0].classList.remove("d-none");
+		printable[0].classList.add("d-flex");
+		printable[1].classList.remove("d-none");
+		printable[1].classList.add("d-flex");
+	}
+	if (printable[5].classList.contains("d-flex") || printable[6].classList.contains("d-flex")) {
+		printable[5].classList.remove("d-none");
+		printable[5].classList.add("d-flex");
+		printable[6].classList.remove("d-none");
+		printable[6].classList.add("d-flex");
+	}
+}
+
+function activate(pp, inP) {
+	// check the checkbox for each selected section
+	pp.querySelector("input").type === "checkbox" ? pp.querySelector("input").checked = true : "do nothing";
+	pp.classList.remove("d-none");
+	pp.classList.add("d-flex");
+}
+
+function formatInput(inP) {
+	const value = inP.value;
+	const label = inP.parentElement.querySelector("label").innerHTML;
+	const strong = document.createElement("strong");
+	const span = document.createElement("strong");
+	const ta = inP.parentElement.parentElement;
+
+	ta.classList.add("fontLarge");
+	ta.classList.add("border-4");
+	ta.classList.add("border-bottom");
+
+	inP.parentElement.remove();
+	strong.innerHTML = label.toUpperCase();
+	span.innerHTML = ": " + value;
+	ta.append(strong);
+	ta.append(span);
+}
+
+// format the person input section
+function formatPersonalSection() {
+	document.querySelector("#personal").querySelectorAll("input").forEach(inP => {
+		formatInput(inP);
+	});
+	document.querySelector("#personal").querySelectorAll("select").forEach(inP => {
+		formatInput(inP);
+	});
+}
+
+// MOre stuff
+function doThis() {
+	const d = document.querySelectorAll("div[class*='p-col']");
+
+	d.forEach(function (o) {
+		let newC = '';
+		o.classList.value.split(" ").forEach(function (l) {
+			if (l.search("p-") === 0) newC = l;
+			o.classList.remove(l);
+		});
+		o.classList.add(newC.substring(2, newC.length));
+		o.classList.add("fontLarge");
+	});
 }
