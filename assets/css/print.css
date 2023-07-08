@@ -54,7 +54,7 @@ option {
     font-weight: bolder;
     font-size: 10px!important;
     word-wrap: break-word;
-    word-break: break-all;
+    /* word-break: break-all; */
 }
 .mui-container {
     padding: 0;
@@ -117,12 +117,7 @@ main.mui-textfield {
 }
 
 .regBox {
-	position: absolute;
 	display: flex!important;
-    top: 2em;
-    right: 1em;
-    width: 15em;
-    height: 3em;
 }
 
 .mui-appbar {
